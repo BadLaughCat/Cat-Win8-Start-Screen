@@ -1,0 +1,17 @@
+﻿<Window x:Class="Cat_Win8_Start_Menu.StartButton"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Cat_Win8_Start_Menu"
+        mc:Ignorable="d"
+        Title="StartButton" Height="40" Width="48" Topmost="True" ShowInTaskbar="False" AllowsTransparency="True" ResizeMode="NoResize" WindowStyle="None" Background="Transparent" MouseEnter="Window_MouseEnter" MouseLeave="Window_MouseLeave" MouseDown="Window_MouseDown" MouseUp="Window_MouseUp">
+    <Window.ContextMenu>
+        <ContextMenu>
+            <MenuItem x:Name="Quit" Header="退出"/>
+        </ContextMenu>
+    </Window.ContextMenu>
+    <Grid>
+        <Image x:Name="OnlyOne" RenderOptions.BitmapScalingMode="NearestNeighbor" UseLayoutRounding="True" Stretch="None"/>
+    </Grid>
+</Window>
